@@ -1,0 +1,1 @@
+SELECT idaction, name, type FROM piwik_log_action;

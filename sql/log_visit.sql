@@ -1,0 +1,4 @@
+# This query selects all meaningful data from the log_visit table and unhexes the idvisitor column.
+SELECT 
+idvisit, idsite, conv(hex(idvisitor), 16, 10) as idvisitor, visitor_localtime, visit_first_action_time, visit_last_action_time, visit_total_time, visitor_returning, visitor_count_visits, visitor_days_since_first, visitor_days_since_last, visit_exit_idaction_url, visit_exit_idaction_name, visit_entry_idaction_url, visit_entry_idaction_name, visit_total_actions, visit_total_events, visit_total_searches, referer_type, referer_name, referer_url, referer_keyword, config_os, config_browser_version, config_resolution, config_pdf, config_flash, config_java, config_quicktime, config_realplayer, config_windowsmedia, config_silverlight, config_cookie, location_browser_lang, location_country, location_region, location_city 
+FROM piwik_log_visit;
