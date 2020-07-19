@@ -23,7 +23,7 @@ library(ggsci) # Plot themes
 # The dataset includes pseudoanonymised logs from the transcription tool and learners' grades.
 # Notice that this is a cleansed & aggregated dataset. For raw data, please contact the author.
 
-phontrans_logs_cleansed <- read_excel("data/cleansed/phontrans_logs_cleansed.xlsx")
+phontrans_logs_cleansed <- read_excel("data/phontrans_logs_cleansed.xlsx")
 phontrans_logs_cleansed$sex <- phontrans_logs_cleansed$sex %>% factor(levels = c("F", "M"))
 phontrans_logs_cleansed$group <- phontrans_logs_cleansed$group %>% factor(levels = c(7, 8, 9, 10))
 phontrans_logs_cleansed$visited_at_all <- phontrans_logs_cleansed$visited_at_all %>% factor(levels = c("TRUE", "FALSE"))
